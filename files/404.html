@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="/files/logo-GhnQBvCJh/logo.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="description" content="Kishlay s.e , se , K.S.E , k.s.e , wtf, KISHLAY , name is se" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Not found !</title>
+</head>
+<body>
+    <span id="circ">
+        <a href="/redirect">GO TO HOME !</a>
+    </span>
+    <div><h1>Error &nbsp;<span class="text1">4</span>0<span class="text1">4</span></h1><span id="text"></span></div>  
+  <br>
+  <br> 
+  <h2  id="textb">The link you are searching for is gone to a Holiday and never back again !</h2><br><br>
+  <h3>Sorry that was an error , the link is not available in our server..... All that we know !</h3>
+  <footer>&copy; <span>KISHLAY(S)* SEARCH ENGINE</span>  &nbsp; &nbsp;|&nbsp; &nbsp; <span><a href="/">HOMEPAGE</a></span> &nbsp; &nbsp;|&nbsp; &nbsp; <span><a href="https://stackoverflow.com/questions" target="_blank" >FIND ME ON STACKOVERFLOW</a></span></footer>
+</body>
+<style>
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: 'Poppins' , sans-serif;
+        color:#fff;
+    }
+    body{
+        background: #111;
+        display: flex;
+        align-items: center;
+    justify-content: center;
+        min-height: 100vh;
+        width:100%;
+        flex-direction: column;
+        overflow:hidden;
+}
+    :root{
+        --media-mobile:1.2em;
+        --footer:18px;
+    }
+    div #text{
+            display:inline-block;
+            z-index:3;
+            position: absolute;
+            transform: rotate(-14deg);
+            right:-60%;
+            top:50%;
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            font-size: var(--media-mobile);
+            animation: animate .8s linear infinite;
+           color:yellow;
+           /* z-index:2; */
+            
+           -webkit-text-stroke: 1px black;
+        }
+        .text1{
+            -webkit-background-clip:text;
+            background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image:url("/files/drops.jpg");
+        background-size:cover;
+        -webkit-text-stroke: 2px black;
+    }
+    div {
+        /* right:50%; */
+        /* left:50%; */
+        /* display: flex; */
+        position: absolute;
+        top:5%;
+        /* font-size:4em; */
+    }
+    div h1{
+        font-size:4em;
+        z-index:2;
+
+    }h2{
+        font-size:1.5rem;
+        color:#499FE0;
+
+    }
+    h3{
+        font-size: 1rem;
+        color:#66b6f3;
+
+    }
+    @keyframes animate{
+            0%{
+                font-size:var(--media-mobile);
+            }
+            50%{
+                font-size:calc(var(--media-mobile) - .08em);
+            }
+            100%{
+                font-size:var(--media-mobile);
+            }
+        }
+        footer{
+        position: absolute;
+        bottom:0px;
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: grey;
+        font-weight: 600;
+        color:white;
+        padding:5px 10px;
+        font-size:var(--footer);
+    }
+    #circ{
+        /* width:100px;
+        height:100px; */
+        transition: 1s;
+        display:flex;
+        align-items: flex-start;
+        justify-content:flex-start;
+        position:absolute;
+        pointer-events: none;
+        width:100%;
+        height:100%;
+        clip-path: circle(200px at 60px 60px);
+        background:linear-gradient(#64ff14,transparent);
+        z-index:4;
+        /* background: */
+    }
+    #circ a{
+        transition: 1s;
+        text-decoration: none;
+        position: absolute;
+        display: flex;
+        top:10%;
+        left:2%;
+        font-size:18px;
+        padding:10px 20px;
+        color:#111;
+        font-weight:600;
+        z-index:5;
+        background:#fff;
+
+    }
+    @media only screen and (max-width:800px){
+            :root{
+                --media-mobile:.9em;
+                --footer:15px;
+            }
+            h1{
+                
+                font-size:2.3em;
+                
+            }
+            div{
+                display: flex;
+                flex-direction: row;
+            }
+            div #text{
+                top:40px;
+                right:-20%;
+                transform: rotate(-15deg);
+            }
+            footer{
+                flex-direction:row;
+            }
+            #search{
+                width:90%;
+            }
+            #circ{
+                display:none;
+
+            }
+            #circ a{
+                display:none;
+            }
+
+        }
+</style>
+<script>
+    var text = document.getElementById("text");
+    var textb = document.getElementById("textb");
+
+    var arr = ["Oh, Look Mom I found a 404 !","Thats a bad 404 request buddy !","Link isn't available , Go Away !","File has been killed by the Corona Virus !","Oh , sh*t , you found it again !","404 Is a bad request !"];
+    var arr_b = ["The link you are searching for is gone to a Holiday and never back again !","The link is Kidnapped , give us $200 so we think to get it back !","Seems you get to the wrong way !","The link is in the hell right now !","Server : Oh sh*t ! , Where's the file !"];
+    var ram_arr = Math.floor(Math.random() * arr.length);
+    var ram_arr_b = Math.floor(Math.random() * arr_b.length);
+    text.innerHTML = arr[ram_arr];
+    textb.innerHTML = arr_b[ram_arr_b];
+</script>
+</html>
