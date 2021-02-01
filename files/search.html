@@ -26,7 +26,7 @@
         var inp = document.getElementById('s');
         var url = "https://k-s-e.herokuapp.com/redirect?q=";
         var url_text = "https://k-s-e.herokuapp.com/text_search?q=";
-        var background = ['1.jpeg','2.jpg','3.jpg','4.jpg','5.jpg'];
+        var background = ['1.jpeg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg'];
         var index_back = Math.floor(Math.random() * background.length);
         function func(){
         if(inp.value.match(match_url)){
@@ -38,13 +38,15 @@
 
             }
             else{
+                
                 var redirect_q = url.concat(inp.value);
                 location.href = redirect_q;
                 
             }
         }else{
             console.log("not a valid url entered sending request to show text !");
-            var redirect_q = url_text.concat(inp.value);
+            var urlincode = (inp.value.trim()).replace(/\s/g,"+")
+            var redirect_q = url_text.concat(urlincode);
                 location.href = redirect_q;
         }
         }
